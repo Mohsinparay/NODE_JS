@@ -34,11 +34,11 @@ const server = http.createServer((req, res) => {
         // console.log(realTimeData);
       })
       .on("end", (err) => {
-        if (err) return console.log("connection closed due to errors", err);
+        if (err) return console.log("connection closed due to some errors", err);
         res.end();
       });
   } else {
-    res.end("File not found");
+    res.end("404 File not found");
   }
 });
 
