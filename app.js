@@ -1,7 +1,7 @@
 const express = require("express");
 const sendMail = require("./sendmail.js");
 const app = express();
-let PORT = 5000;
+let PORT = 8000;
 
 app.get("/", (req,res)=>{
     res.send("i am a server");
